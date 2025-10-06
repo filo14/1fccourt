@@ -23,8 +23,8 @@
                 useCORS: true
             }).then(canvas => {
                 const link = document.createElement('a');
-                link.download = filename.replace(/\s+/g, '-') + '.jpeg'; 
-                link.href = canvas.toDataURL('image/jpeg');
+                link.download = filename.replace(/\s+/g, '-') + '.png'; 
+                link.href = canvas.toDataURL('image/png');
                 link.click(); 
             });
         }
