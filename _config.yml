@@ -3,3 +3,5 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+domain: 1fccourt.github.io    
+url: https://1fccourt.github.io 
