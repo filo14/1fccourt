@@ -1,0 +1,49 @@
+- title: ASK Erlaa vs EL Liesing
+  league: EL Liesing 2025/26
+  date: 14. September 2025
+  matchday: 1
+  photo: /assets/matchday-photos/1.jpeg
+  home_team:
+    name: 1. FC Court
+    logo: /assets/logos/1-fc-court.png
+  away_team:
+    name: Viktoria Altmannsdorf
+    logo: /assets/logos/viktoria-altmannsdorf.png
+  score:
+    home: 3
+    away: 1
+    status: Endstand
+  goals:
+    home:
+      - player: Tobias Klauser
+        times: [3, 5] 
+      - player: Clemens Zischka
+        times: [28]
+      - player: Erik Stefan
+        times: [29]
+    away:
+      - player: Vincent Krupop
+        times: [36]
+
+- title: ASK Erlaa vs EL Liesing
+  league: EL Liesing 2025/26
+  date: 14. September 2025
+  matchday: 1
+  home_team:
+    name: 1. FC Court
+    logo: /assets/logos/1-fc-court.png
+  away_team:
+    name: Viktoria Altmannsdorf
+    logo: /assets/logos/viktoria-altmannsdorf.png
+  score:
+    home: 3
+    away: 1
+    status: Endstand
+  goals:
+    home:
+      - player: Tobias Klauser
+        time: 3'
+    away:
+      - player: Vincent Krupop
+        time: 36'
+# You can duplicate and modify the block above for a second game card

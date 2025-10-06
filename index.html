@@ -1,0 +1,11 @@
+---
+layout: default
+title: Game Results
+---
+
+<div class="container">
+    {% comment %} Iterate through every game defined in _data/games.yml {% endcomment %}
+    {% for game in site.data.games %}
+        {% include game_card.html game=game %}
+    {% endfor %}
+</div>

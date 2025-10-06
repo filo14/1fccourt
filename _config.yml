@@ -1,0 +1,5 @@
+title: 1. FC Court
+theme: minima 
+exclude:
+  - Gemfile
+  - Gemfile.lock
