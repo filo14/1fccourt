@@ -4,10 +4,31 @@
 <head>
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+
 </head>
 
 <body>
     {{ content }}
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <script>
+        function downloadCard(cardId, filename) {
+            const cardElement = document.getElementById(cardId);
+
+            // Use html2canvas to capture the element
+            html2canvas(cardElement, {
+                // Options: Increase scale for higher resolution/quality
+                scale: 2,
+                allowTaint: true,
+                useCORS: true
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = filename.replace(/\s+/g, '-') + '.png'; 
+                link.href = canvas.toDataURL('image/png');
+                link.click(); 
+            });
+        }
+    </script>
 </body>
 
 </html>

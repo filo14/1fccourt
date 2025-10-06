@@ -1,8 +1,8 @@
 /* --- 1. Card Container & Background --- */
 .card__content {
     /* Set the requested portrait size (4:5 aspect ratio) */
-    width: 500px;
-    height: 625px;
+    width: 90%;
+    max-width: 500px;
 
     align-items: center;
     text-align: center;
@@ -11,6 +11,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    aspect-ratio: 4 / 5;
     
     /* Overlay for Readability */
     position: relative;
@@ -156,4 +161,25 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.download-button {
+    /* Position relative to the card */
+    display: block;
+    width: 200px; /* Match the card width */
+    margin: 15px auto 30px auto; /* Centers and spaces it out */
+    padding: 10px 20px;
+    
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
 }
