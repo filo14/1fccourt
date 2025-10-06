@@ -1,8 +1,3 @@
-/*
- * Revised CSS for Game Result Card (v3)
- * FIX: Score moved to a new line below the team blocks.
- */
-
 /* --- 1. Card Container & Background --- */
 .card__content {
     /* Set the requested portrait size (4:5 aspect ratio) */
@@ -12,7 +7,7 @@
     align-items: center;
     text-align: center;
     
-    /* Background image setup (MUST BE EDITED) */
+    /* Background image setup */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +22,6 @@
     /* Layout */
     display: flex;
     flex-direction: column;
-    /* Removed 'space-between' to control spacing after separating the score */
     padding: 15px;
     box-sizing: border-box;
     overflow: hidden;
@@ -37,7 +31,6 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Pseudo-element for the semi-transparent dark overlay */
 .card__content::before {
     content: '';
     position: absolute;
@@ -45,7 +38,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 0; 
 }
 
@@ -87,12 +80,11 @@
 
 /* --- 3. Teams, Logos, and Score Layout --- */
 
-/* The main content now uses flex-wrap to stack the score on a new line */
 .game-result__content {
     display: flex;
-    flex-wrap: wrap; /* NEW: Allows items to wrap onto a new line */
-    align-items: flex-start; /* Aligns content to the top */
-    justify-content: space-between; /* Keeps teams on either side */
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: space-between; 
     padding: 25px 0;
 }
 
@@ -102,7 +94,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 45%; /* Increased team width */
+    width: 45%;
 }
 
 .game-result__team-logo img {
@@ -124,13 +116,12 @@
 /* --- Score Column (Now full width) --- */
 .game-result__score-wrap {
     margin-top: 25px; 
-    /* Set to 100% width so it wraps to the next line */
     width: 100%; 
     text-align: center;
 }
 
 .game-result__score {
-    font-size: 4em; /* Made score even larger for impact */
+    font-size: 4em;
     font-weight: 900;
     display: flex;
     align-items: center;
@@ -145,15 +136,15 @@
 
 /* Score Colors */
 .game-result__score-result--winner {
-    color: #ffffff; /* Vibrant Green */
+    color: #ffffff; 
 }
 
 .game-result__score-result--loser {
-    color: #ffffff; /* Bright Red */
+    color: #ffffff; 
 }
 
 .game-result__score-label {
-    font-size: 1em; /* Increased size */
+    font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;

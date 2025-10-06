@@ -11,42 +11,45 @@
             <div class="game-result__content">
                 <div class="game-result__team game-result__team--odd">
                     <figure class="game-result__team-logo">
-                        <img src="{{ include.game.home_team.logo | relative_url }}" alt="{{ include.game.home_team.name }}">
+                        <img src="{{ include.game.home_team.logo | relative_url }}"
+                            alt="{{ include.game.home_team.name }}">
                     </figure>
                     <div class="game-result__team-info">
                         <h5 class="game-result__team-name">{{ include.game.home_team.name }}</h5>
                     </div>
-                            <div class="game-result__header--alt__team">
-            {% for entry in include.game.goals.home %}
-                <div>
-                {% assign goal_count = entry.times | size %}  {% assign times_list = entry.times | join: ', ' %}  <span class="game-result__goal">
-                    {% for i in (1..goal_count) %}⚽{% endfor %} 
-                    {{ entry.player }} - 
-                    <span class="goal-minutes">({{ times_list }}')</span>
-                </span>
-                </div>
-            {% endfor %}
-        </div>
+                    <div class="game-result__header--alt__team">
+                        {% for entry in include.game.goals.home %}
+                        <div>
+                            {% assign goal_count = entry.times | size %} {% assign times_list = entry.times | join: ', '
+                            %} <div class="game-result__goal">
+                                {% for i in (1..goal_count) %}⚽{% endfor %}
+                                {{ entry.player }} -
+                                <span class="goal-minutes">({{ times_list }}')</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div class="game-result__team game-result__team--even">
                     <figure class="game-result__team-logo">
-                        <img src="{{ include.game.away_team.logo | relative_url }}" alt="{{ include.game.away_team.name }}">
+                        <img src="{{ include.game.away_team.logo | relative_url }}"
+                            alt="{{ include.game.away_team.name }}">
                     </figure>
                     <div class="game-result__team-info">
                         <h5 class="game-result__team-name">{{ include.game.away_team.name }}</h5>
                     </div>
-                            <div class="game-result__header--alt__team">
-            {% for entry in include.game.goals.away %}
-                {% assign goal_count = entry.times | size %}
-                {% assign times_list = entry.times | join: ', ' %}
-                
-                <span class="game-result__goal">
-                    {% for i in (1..goal_count) %}⚽{% endfor %} 
-                    {{ entry.player }} - 
-                    <span class="goal-minutes">({{ times_list }}')</span>
-                </span>
-            {% endfor %}
-        </div>
+                    <div class="game-result__header--alt__team">
+                        {% for entry in include.game.goals.away %}
+                        {% assign goal_count = entry.times | size %}
+                        {% assign times_list = entry.times | join: ', ' %}
+
+                        <div class="game-result__goal">
+                            {% for i in (1..goal_count) %}⚽{% endfor %}
+                            {{ entry.player }} -
+                            <span class="goal-minutes">({{ times_list }}')</span>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
 
                 <div class="game-result__score-wrap">

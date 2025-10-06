@@ -1,4 +1,4 @@
-- title: ASK Erlaa vs EL Liesing
+- title: Saisonauftakt im Tempel 🔥
   league: EL Liesing 2025/26
   date: 14. September 2025
   matchday: 1
@@ -16,7 +16,7 @@
   goals:
     home:
       - player: Tobias Klauser
-        times: [3, 5] 
+        times: [3] 
       - player: Clemens Zischka
         times: [28]
       - player: Erik Stefan
@@ -25,26 +25,28 @@
       - player: Vincent Krupop
         times: [36]
 
-- title: ASK Erlaa vs EL Liesing
+- title: Abwehrschlacht 🧱
   league: EL Liesing 2025/26
-  date: 14. September 2025
-  matchday: 1
-  photo: /assets/matchday-photos/1.jpeg
-  home_team:
+  date: 28. September 2025
+  matchday: 2
+  photo: /assets/matchday-photos/2.jpeg
+  away_team:
     name: 1. FC Court
     logo: /assets/logos/1-fc-court.png
-  away_team:
-    name: Viktoria Altmannsdorf
-    logo: /assets/logos/viktoria-altmannsdorf.png
+  home_team:
+    name: FC Haudaneben 25
+    logo: /assets/logos/fc-haudaneben-25.png
   score:
-    home: 3
-    away: 1
+    home: 1
+    away: 3
     status: Endstand
   goals:
-    home:
-      - player: Tobias Klauser
-        time: 3'
     away:
-      - player: Vincent Krupop
-        time: 36'
+      - player: Konstantin Mader
+        times: [10, 40]
+      - player: Jakob Schram
+        times: [33]
+    home:
+      - player: Luca Böckle
+        times: [5]
 # You can duplicate and modify the block above for a second game card
