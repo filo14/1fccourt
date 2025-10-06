@@ -18,9 +18,11 @@
             // Use html2canvas to capture the element
             html2canvas(cardElement, {
                 // Options: Increase scale for higher resolution/quality
-                scale: 2,
+                scale: 3,
                 allowTaint: true,
-                useCORS: true
+                useCORS: true,
+                scrollX: 0,
+                scrollY: -window.scrollY
             }).then(canvas => {
                 const link = document.createElement('a');
                 link.download = filename.replace(/\s+/g, '-') + '.png'; 
