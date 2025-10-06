@@ -4,5 +4,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 domain: filo14.github.io  
-url: "https://filo14.github.io" 
-baseurl: "1fccourt"
+url: "https://filo14.github.io"
+baseurl: "/1fccourt" 
