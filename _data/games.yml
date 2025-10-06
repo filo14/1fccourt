@@ -2,13 +2,13 @@
   league: EL Liesing 2025/26
   date: 14. September 2025
   matchday: 1
-  photo: {{ site.baseurl }}/assets/matchday-photos/1.jpeg
+  photo: /assets/matchday-photos/1.jpeg
   home_team:
     name: 1. FC Court
-    logo: {{ site.baseurl }}/assets/logos/1-fc-court.png
+    logo: /assets/logos/1-fc-court.png
   away_team:
     name: Viktoria Altmannsdorf
-    logo: {{ site.baseurl }}/assets/logos/viktoria-altmannsdorf.png
+    logo: /assets/logos/viktoria-altmannsdorf.png
   score:
     home: 3
     away: 1
@@ -29,13 +29,13 @@
   league: EL Liesing 2025/26
   date: 14. September 2025
   matchday: 1
-  photo: {{ site.baseurl }}/assets/matchday-photos/1.jpeg
+  photo: /assets/matchday-photos/1.jpeg
   home_team:
     name: 1. FC Court
-    logo: {{ site.baseurl }}/assets/logos/1-fc-court.png
+    logo: /assets/logos/1-fc-court.png
   away_team:
     name: Viktoria Altmannsdorf
-    logo: {{ site.baseurl }}/assets/logos/viktoria-altmannsdorf.png
+    logo: /assets/logos/viktoria-altmannsdorf.png
   score:
     home: 3
     away: 1

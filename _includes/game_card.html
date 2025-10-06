@@ -11,7 +11,7 @@
             <div class="game-result__content">
                 <div class="game-result__team game-result__team--odd">
                     <figure class="game-result__team-logo">
-                        <img src="{{ include.game.home_team.logo }}" alt="{{ include.game.home_team.name }}">
+                        <img src="{{ site.baseurl }}{{ include.game.home_team.logo }}" alt="{{ include.game.home_team.name }}">
                     </figure>
                     <div class="game-result__team-info">
                         <h5 class="game-result__team-name">{{ include.game.home_team.name }}</h5>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="game-result__team game-result__team--even">
                     <figure class="game-result__team-logo">
-                        <img src="{{ include.game.away_team.logo }}" alt="{{ include.game.away_team.name }}">
+                        <img src="{{ site.baseurl }}{{ include.game.away_team.logo }}" alt="{{ include.game.away_team.name }}">
                     </figure>
                     <div class="game-result__team-info">
                         <h5 class="game-result__team-name">{{ include.game.away_team.name }}</h5>
